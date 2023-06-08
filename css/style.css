@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300;1,400&family=Dancing+Script:wght@400;600;700&family=Playball&display=swap");
+
+.font-playball {
+  font-family: "Playball", cursive;
+}
+
+* {
+  font-family: "Comic Neue", cursive;
+}
+
+.bg-berem {
+  background-color: #bc8f8f;
+}
+
+.bg-wakwak {
+  background-color: #e1cdcf;
+}
+
+.bg-fee {
+  background-color: #f6f6f6;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-45 {
+  font-size: 45px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.scale {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.scale:hover {
+  transform: scale(1.05);
+}
+
+.modal-body {
+  background-image: url("../foto/prewe3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cover {
+  background-image: url("../foto/prewed\ ddk\ tegak.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#footer {
+  background-image: url("../foto/foto6.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#date {
+  background-image: url("../foto/prewed7.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

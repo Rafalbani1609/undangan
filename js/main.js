@@ -26,7 +26,7 @@ $(document).ready(function () {
 // owl carousel end
 
 // waktu start
-const countDownDate = new Date("July 16, 2023 10:00:00").getTime();
+const countDownDate = new Date("July 16, 2023 09:00:00").getTime();
 const x = setInterval(function () {
   const now = new Date().getTime();
   const distance = countDownDate - now;

@@ -1,262 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Undangan Pernikahan" />
-    <link rel="icon" type="image/png" sizes="192x192" href="foto/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <!-- <meta property="og:image" content="https://ibb.co/r3xY9Z2" /> -->
-    <title>Al bani & Salwa</title>
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-  </head>
-  <body>
-    <!-- popup start -->
-    <div class="d-none">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="klikmodal">Launch demo modal</button>
-    </div>
-    <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="row justify-content-center text-center h-100 text-white">
-              <div class="col-12 my-auto">
-                <img src="foto/prewe3.jpeg" width="180px" class="img-fluid rounded-bottom rounded-pill mb-2 shadow-lg border-white" alt="" />
-                <p>PERNIKAHAN</p>
-                <h1 class="font-playball fs-45">Al bani & Salwa</h1>
-                <p class="mb-1">Kepada Bapak/Ibu/Saudara/i</p>
-                <p class="mb-1"><span id="nama"></span></p>
-                <p class="mb-2">Tanpa mengurangi rasa hormat, Kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.</p>
-                <button type="button" class="btn btn-primary text-white rounded-4" data-bs-dismiss="modal" onclick="playAudio()">
-                  <i class="fa-solid fa-envelope"></i>
-                  Buka Undangan
-                </button>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Undangan Pernikahan" />
+  <link rel="icon" type="image/png" sizes="192x192" href="foto/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <!-- <meta property="og:image" content="https://ibb.co/r3xY9Z2" /> -->
+  <title>Al bani & Salwa</title>
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- popup start -->
+  <div class="d-none">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      id="klikmodal">Launch demo modal</button>
+  </div>
+  <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row justify-content-center text-center h-100 text-white">
+            <div class="col-12 my-auto">
+              <img src="foto/prewe3.jpeg" width="180px"
+                class="img-fluid rounded-bottom rounded-pill mb-2 shadow-lg border-white" alt="" />
+              <p>PERNIKAHAN</p>
+              <h1 class="font-playball fs-45">Al bani & Salwa</h1>
+              <p class="mb-1">Kepada Bapak/Ibu/Saudara/i</p>
+              <p class="mb-1"><span id="nama"></span></p>
+              <p class="mb-2">Tanpa mengurangi rasa hormat, Kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara
+                pernikahan kami.</p>
+              <button type="button" class="btn btn-primary text-white rounded-4" data-bs-dismiss="modal"
+                onclick="playAudio()">
+                <i class="fa-solid fa-envelope"></i>
+                Open Invitation
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- popup end -->
-    <!-- lagu start -->
-    <audio loop id="lagu">
-      <source src="audio/audio.mp3" type="audio/mp3" />
-    </audio>
-    <!-- lagu end -->
-    <!-- header start -->
-    <header class="bg-wakwak">
-      <div class="d-flex justify-content-center vh-100 bg-cover">
-        <div class="container mt-auto">
-          <div class="row text-center">
-            <div class="col-12 text-white pb-5 mb-5">
-              <p class="fs-4 m-0 p-0">RESEPSI</p>
-              <p class="font-playball fs-45 m-0 p-0">Al bani & Salwa</p>
-              <hr class="border my-0 p-0 w-75 mx-auto" />
-              <p class="fs-4">16 . 07 . 2023</p>
-              <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-1" target="_blank"
-                    href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MW1uaWwxcHVmcThna2RucXM3czJ1MDl1cmMgcmFmYWxiYW5pMTIzNDVAbQ&tmsrc=rafalbani12345%40gmail.com">
-                    <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- header end -->
-    <!-- calon start -->
-    <section class="bg-wakwak" id="calon">
-      <div class="container py-5">
-        <div class="row text-center justify-content-center">
-          <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
-            <img src="foto/bismillah.png" alt="" width="200px" class="mb-3" />
-            <h5 class="mb-3">Assalamualaikum Warahmatullahi Wabarakatuh</h5>
-            <p class="m-0 p-0">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</p>
-          </div>
-          <div class="col-md-5 col-12 my-md-4 my-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
-            <img src="foto/fotomasakecil.jpg" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
-            <h1 class="font-playball text-dark fs-45">Muhammad Rafa <br>Al bani </h1>
-            <p class="m-0 p-0">Anak Ke-1</p>
-            <p class="m-0 p-0">Bapak Toto Widodo & Ibu Laela Muliana Masdjong</p>
-            <a href="https://www.instagram.com/rafalbanii/" class="btn btn-outline-primary fs-5 btn-light rounded-circle mt-3" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          <div class="col-md-2 col-12 m-md-auto my-5" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="600">
-            <h1 class="m-0 p-0 font-playball fs-45">&</h1>
-          </div>
-          <div class="col-md-5 col-12 my-md-4 my-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1100">
-            <img src="foto/fotomasakecil.jpg" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
-            <h1 class="font-playball text-dark fs-45">Isrhodhautul Salwa Ubhaidah </h1>
-            <p class="m-0 p-0">Anak Ke-1</p>
-            <p class="m-0 p-0">Bapak Romli & Ibu Uniarsih</p>
-            <a href="https://www.instagram.com/vilaint__/" class="btn btn-outline-primary fs-5 btn-light rounded-circle mt-3" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
+  </div>
+  <!-- popup end -->
+  <!-- lagu start -->
+  <audio loop id="lagu">
+    <source src="audio/audio.mp3" type="audio/mp3" />
+  </audio>
+  <!-- lagu end -->
+  <!-- header start -->
+  <header class="bg-wakwak">
+    <div class="d-flex justify-content-center vh-100 bg-cover">
+      <div class="container mt-auto">
+        <div class="row text-center">
+          <div class="col-12 text-white pb-5 mb-5">
+            <p class="fs-4 m-0 p-0">RESEPSI</p>
+            <p class="font-playball fs-45 m-0 p-0">Al bani & Salwa</p>
+            <hr class="border my-0 p-0 w-75 mx-auto" />
+            <p class="fs-4">16 . 07 . 2023</p>
+            <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-1" target="_blank"
+              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MW1uaWwxcHVmcThna2RucXM3czJ1MDl1cmMgcmFmYWxiYW5pMTIzNDVAbQ&tmsrc=rafalbani12345%40gmail.com">
+              <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
             </a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- calon end -->
-    <!-- akad start -->
-    <section class="bg-berem" id="date">
-      <div class="container py-5">
-        <div class="row text-center justify-content-center">
-          <div class="col-12 col-md-8 mb-5 mt-5 pt-5" data-aos="zoom-in" data-aos-duration="1300">
-            <div class="card p-3 rounded-5 text-white bg-secondary bg-opacity-50 border border-white shadow-lg">
-              <img src="foto/flower.png" width="100px" class="mx-auto my-3" alt="" />
-              <p class="m-0 p-0">Hitung Mundur</p>
-              <p class="fs-4">Hari Bahagia Kami</p>
-              <div class="row justify-content-between mb-3">
-                <div class="col-3">
-                  <p class="p-0 m-0 fs-3" id="hari"></p>
-                  Hari
-                </div>
-                <div class="col-3">
-                  <p class="p-0 m-0 fs-3" id="jam"></p>
-                  Jam
-                </div>
-                <div class="col-3">
-                  <p class="p-0 m-0 fs-3" id="menit"></p>
-                  Menit
-                </div>
-                <div class="col-3">
-                  <p class="p-0 m-0 fs-3" id="detik"></p>
-                  Detik
-                </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- calon start -->
+  <section class="bg-wakwak" id="calon">
+    <div class="container py-5">
+      <div class="row text-center justify-content-center">
+        <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
+          <img src="foto/bismillah.png" alt="" width="200px" class="mb-3" />
+          <h5 class="mb-3">Assalamualaikum Warahmatullahi Wabarakatuh</h5>
+          <p class="m-0 p-0">Maha Suci Allah Subhanahu wa Ta'ala yang telah menciptakan makhluk-Nya berpasang-pasangan.
+            Ya Allah, perkenankanlah dan Ridhoilah Pernikahan Kami.</p>
+        </div>
+        <div class="col-md-5 col-12 my-md-4 my-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
+          <img src="fotomuka/fotogw3.jpg" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
+          <h1 class="font-playball text-dark fs-45">Muhammad Rafa <br>Al bani </h1>
+          <p class="m-0 p-0">Anak Ke-1</p>
+          <p class="m-0 p-0">Bapak Toto Widodo & Ibu Laela Muliana Masdjong</p>
+          <a href="https://www.instagram.com/rafalbanii/"
+            class="btn btn-outline-primary fs-5 btn-light rounded-circle mt-3" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col-md-2 col-12 m-md-auto my-5" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="600">
+          <h1 class="m-0 p-0 font-playball fs-45">&</h1>
+        </div>
+        <div class="col-md-5 col-12 my-md-4 my-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1100">
+          <img src="fotomuka/fotodia3.jpeg" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
+          <h1 class="font-playball text-dark fs-45">Isrhodhautul Salwa Ubhaidah </h1>
+          <p class="m-0 p-0">Anak Ke-1</p>
+          <p class="m-0 p-0">Bapak Romli & Ibu Uniarsih</p>
+          <a href="https://www.instagram.com/vilaint__/"
+            class="btn btn-outline-primary fs-5 btn-light rounded-circle mt-3" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- calon end -->
+  <!-- akad start -->
+  <section class="bg-berem" id="date">
+    <div class="container py-5">
+      <div class="row text-center justify-content-center">
+        <div class="col-12 col-md-8 mb-5 mt-5 pt-5" data-aos="zoom-in" data-aos-duration="1300">
+          <div class="card p-3 rounded-5 text-white bg-secondary bg-opacity-50 border border-white shadow-lg">
+            <img src="foto/flower.png" width="100px" class="mx-auto my-3" alt="" />
+            <p class="m-0 p-0">Countdown</p>
+            <p class="fs-4">Our Happiest Day</p>
+            <div class="row justify-content-between mb-3">
+              <div class="col-3">
+                <p class="p-0 m-0 fs-3" id="hari"></p>
+                Days
               </div>
-              <p class="fst-italic">
-                Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
-                Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
-              </p>
-              <p class="fw-bold">- Q.S. Ar-Rum : 21 -</p>
+              <div class="col-3">
+                <p class="p-0 m-0 fs-3" id="jam"></p>
+                Hours
+              </div>
+              <div class="col-3">
+                <p class="p-0 m-0 fs-3" id="menit"></p>
+                Minutes
+              </div>
+              <div class="col-3">
+                <p class="p-0 m-0 fs-3" id="detik"></p>
+                Second
+              </div>
             </div>
+            <p class="fst-italic">
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
+              sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
+              sayang.
+              Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+              berpikir.
+            </p>
+            <p class="fw-bold">- Q.S. Ar-Rum : 21 -</p>
           </div>
-          <div class="col-md-8 col-12 py-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
-            <div class="card shadow-lg bg-white rounded-5">
-              <img src="foto/prewed7.jpg" class="img-fluid rounded-bottom rounded-5" alt="" />
-              <div class="p-3">
-                <p class="fs-2 mb-0 p-0">Resepsi</p>
-                <hr class="border border-dark my-2 p-0 w-75 mx-auto" />
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-4">
-                    <p>MInggu</p>
-                  </div>
-                  <div class="col-4">
-                    <p class="fs-4 m-0 p-0">16</p>
-                    <p>Juli</p>
-                  </div>
-                  <div class="col-4">
-                    <p>2023</p>
-                  </div>
-                  <div class="col-12">
-                    <hr class="border border-dark my-2 p-0 w-100 mx-auto" />
-                  </div>
-                  <!-- <div class="col-6">
+        </div>
+        <div class="col-md-8 col-12 py-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
+          <div class="card shadow-lg bg-white rounded-5">
+            <img src="foto/prewed7.jpg" class="img-fluid rounded-bottom rounded-5" alt="" />
+            <div class="p-3">
+              <p class="fs-2 mb-0 p-0">Wedding Reception</p>
+              <hr class="border border-dark my-2 p-0 w-75 mx-auto" />
+              <div class="row justify-content-center align-items-center">
+                <div class="col-4">
+                  <p>Sunday</p>
+                </div>
+                <div class="col-4">
+                  <p class="fs-4 m-0 p-0">16</p>
+                  <p>July</p>
+                </div>
+                <div class="col-4">
+                  <p>2023</p>
+                </div>
+                <div class="col-12">
+                  <hr class="border border-dark my-2 p-0 w-100 mx-auto" />
+                </div>
+                <!-- <div class="col-6">
                     <p class="m-0 p-0">Akad</p>
                     <p>08.00 WIB</p>
                   </div> -->
-                  <div class="col-6">
-                    <p class="m-0 p-0">Resepsi</p>
-                    <p>10.00-13.00 WIB</p>
-                  </div>
+                <div class="col-6">
+                  <p class="m-0 p-0">Wedding Reception</p>
+                  <p>10.00-13.00 WIB</p>
                 </div>
-                <hr class="border border-dark my-2 p-0 w-75 mx-auto" />
-                <p class="m-0 p-0"><i class="fa-solid fa-location-dot"></i></p>
-                <p>Gelanggang Remaja Tj. Priok, RT.14/RW.13, Sunter Agung, Kec. Tj. Priok, <br />Jkt Utara, Daerah Khusus Ibukota Jakarta 14350</p>
-                <a href="https://goo.gl/maps/x3KG2ewoFytQ2Bth9" target="_blank" class="text-decoration-none btn btn-light btn-outline-primary rounded-4 mb-3">
-                  <i class="fa-solid fa-location-arrow"></i>
-                  Lihat Lokasi</a
-                >
+              </div>
+              <hr class="border border-dark my-2 p-0 w-75 mx-auto" />
+              <p class="m-0 p-0"><i class="fa-solid fa-location-dot"></i></p>
+              <p>Gelanggang Remaja Tj. Priok, RT.14/RW.13, Sunter Agung, Kec. Tj. Priok, <br />Jkt Utara, Daerah Khusus
+                Ibukota Jakarta 14350</p>
+              <a href="https://goo.gl/maps/x3KG2ewoFytQ2Bth9" target="_blank"
+                class="text-decoration-none btn btn-light btn-outline-primary rounded-4 mb-3">
+                <i class="fa-solid fa-location-arrow"></i>
+                Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akad end -->
+  <!-- cerita start -->
+  <section class="bg-wakwak">
+    <div class="container py-5">
+      <div class="row text-center">
+        <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
+          <h1 class="fs-45 font-playball">Our Story</h1>
+        </div>
+        <div class="col-12">
+          <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500"
+            data-aos-offset="0">
+            <div class="d-none d-md-block col-md-5"></div>
+            <div class="col-md-1 col-2 text-danger my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="col-md-5 col-10">
+              <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
+                <h4 class="font-playball">The First Time When I Found You</h4>
+                <p>
+                  When I had been alone for too long and needed someone, then I found you. We were brought together by
+                  the allah in one of his plans on Friday, the 21st of May, in the year 2021 and it managed to make me
+                  feel a very special presence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="750"
+            data-aos-offset="0">
+            <div class="d-none d-md-block col-md-5">
+              <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
+                <h3 class="font-playball">When In Relationship</h3>
+                <p>
+                  Her name is Isrhodhautul Salwa Ubhaidah, the good name for a beautiful, sweet and funny girl like
+                  her. On that day, under the shaded sky, with your laugh and smile, I heard and I saw even the clouds
+                  saw it, until it got bored, until in the end the rain got bored like the clouds, until in the end it
+                  was the rainbow that replaced it to see me, who endlessly smiled with a heart that wanted out but I
+                  held it perfectly.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-1 col-2 text-danger my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="d-none d-md-block col-md-5"></div>
+            <div class="col-10 d-md-none">
+              <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
+                <h3 class="font-playball">When In Relationship</h3>
+                <p>
+                  Her name is Isrhodhautul Salwa Ubhaidah, the good name for a beautiful, sweet and funny girl like
+                  her. On that day, under the shaded sky, with your laugh and smile, I heard and I saw even the clouds
+                  saw it, until it got bored, until in the end the rain got bored like the clouds, until in the end it
+                  was the rainbow that replaced it to see me, who endlessly smiled with a heart that wanted out but I
+                  held it perfectly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1000"
+            data-aos-offset="0">
+            <div class="d-none d-md-block col-md-5"></div>
+            <div class="col-md-1 col-2 text-danger my-auto">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="col-md-5 col-10">
+              <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
+                <h3 class="font-playball">Get Married</h3>
+                <p>
+                  Finally, our special wedding moment was held on July 8, 2023. This is the date we chose to tie the
+                  knot to become a family that is loyal & loves each other.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- akad end -->
-    <!-- cerita start -->
-    <section class="bg-wakwak">
-      <div class="container py-5">
-        <div class="row text-center">
-          <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
-            <h1 class="fs-45 font-playball">Cerita Kita</h1>
-          </div>
-          <div class="col-12">
-            <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500" data-aos-offset="0">
-              <div class="d-none d-md-block col-md-5"></div>
-              <div class="col-md-1 col-2 text-danger my-auto">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-              <div class="col-md-5 col-10">
-                <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
-                  <h4 class="font-playball">Awal Bertemu</h4>
-                  <p>Awal bertemu saya .</p>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="750" data-aos-offset="0">
-              <div class="d-none d-md-block col-md-5">
-                <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
-                  <h3 class="font-playball">Menjalin Hubungan</h3>
-                  <p>Setelah pertemuan itu mengenal satu sama lain, barulah kita mulai menjalin hubungan Hingga kita memutuskan untuk sama-sama selama 5 Tahun.</p>
-                </div>
-              </div>
-              <div class="col-md-1 col-2 text-danger my-auto">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-              <div class="d-none d-md-block col-md-5"></div>
-              <div class="col-10 d-md-none">
-                <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
-                  <h3 class="font-playball">Menjalin Hubungan</h3>
-                  <p>Setelah pertemuan itu mengenal satu sama lain, barulah kita mulai menjalin hubungan Hingga kita memutuskan untuk sama-sama selama 5 Tahun.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1000" data-aos-offset="0">
-              <div class="d-none d-md-block col-md-5"></div>
-              <div class="col-md-1 col-2 text-danger my-auto">
-                <i class="fa-solid fa-heart"></i>
-              </div>
-              <div class="col-md-5 col-10">
-                <div class="card bg-white rounded-3 text-dark p-3 text-start shadow">
-                  <h3 class="font-playball">Akad Nikah</h3>
-                  <p>Akhirnya momen spesial pernikahan kami dilaksanakan pada 16 Juli 2023. Ini menjadi tanggal yang kami pilih untuk saling mengikat janji menjadi sebuah keluarga yang setia & saling menyayangi.</p>
-                </div>
-              </div>
-            </div>
+    </div>
+  </section>
+  <!-- cerita end -->
+  <!-- galeri start -->
+  <section class="bg-berem">
+    <div class="container py-5">
+      <div class="row text-center text-white">
+        <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
+          <h1 class="font-playball fs-45">Gallery Foto</h1>
+        </div>
+        <div class="col-12" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="800">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="foto/foot7.jpeg" /></div>
+            <div class="item"><img src="foto/foto1.jpeg" /></div>
+            <div class="item"><img src="foto/foto8.jpg" /></div>
+            <div class="item"><img src="foto/foto4.jpeg" /></div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- cerita end -->
-    <!-- galeri start -->
-    <section class="bg-berem">
-      <div class="container py-5">
-        <div class="row text-center text-white">
-          <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
-            <h1 class="font-playball fs-45">Gallery Foto</h1>
-          </div>
-          <div class="col-12" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="800">
-            <div class="owl-carousel owl-theme">
-              <div class="item"><img src="foto/foot7.jpeg" /></div>
-              <div class="item"><img src="foto/foto1.jpeg" /></div>
-              <div class="item"><img src="foto/foto8.jpg" /></div>
-              <div class="item"><img src="foto/foto4.jpeg" /></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- galeri end -->
+    </div>
+  </section>
+  <!-- galeri end -->
 
-    <!-- protokol start -->
-    <!-- <section class="bg-wakwak">
+  <!-- protokol start -->
+  <!-- <section class="bg-wakwak">
       <div class="container py-5">
         <div class="row text-center justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300">
@@ -282,21 +318,21 @@
         </div>
       </div>
     </section> -->
-    <!-- protokol end -->
+  <!-- protokol end -->
 
-    <!-- love gift -->
-    <div class="container">
-      <div class="py-4">
-          <div class="text-center">
-              <h1 class="font-estetik mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
-              <p class="mb-1" style="font-size: 0.9rem;">
-                  Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,
-                  dapat melalui :
-              </p>
+  <!-- love gift -->
+  <div class="container">
+    <div class="py-4">
+      <div class="text-center">
+        <h1 class="font-estetik mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
+        <p class="mb-1" style="font-size: 0.9rem;">
+          Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,
+          dapat melalui :
+        </p>
 
-              <div class="overflow-x-hidden">
-                  <div class="row justify-content-center">
-                      <!-- <div class="col-12 card-body border rounded-4 shadow p-3 m-3" style="max-width: 25rem;"
+        <div class="overflow-x-hidden">
+          <div class="row justify-content-center">
+            <!-- <div class="col-12 card-body border rounded-4 shadow p-3 m-3" style="max-width: 25rem;"
                           data-aos="fade-down" data-aos-duration="1500">
                           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Bank_Syariah_Indonesia.svg"
                               class="img-fluid rounded" width="150" alt="bsi">
@@ -312,75 +348,78 @@
                               onclick="salin(this)">Salin No. Rekening</button>
                       </div> -->
 
-                      <div class="col-12 card-body border rounded-4 shadow p-3 m-3" style="max-width: 25rem;"
-                          data-aos="fade-down" data-aos-duration="1500">
-                          <img src="https://www.bcasyariah.co.id/cfind/source/images/logo-bcas-full-color.png"
-                              class="img-fluid rounded" width="150" alt="bca syariah">
-                          <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
+            <div class="col-12 card-body border rounded-4 shadow p-3 m-3" style="max-width: 25rem;" data-aos="fade-down"
+              data-aos-duration="1500">
+              <img src="https://www.bcasyariah.co.id/cfind/source/images/logo-bcas-full-color.png"
+                class="img-fluid rounded" width="150" alt="bca syariah">
+              <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
                               class="img-fluid rounded" width="150" alt="bri"> -->
-                          <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">
-                              No. Rekening 0190002642
-                          </p>
-                          <p class="card-text" style="font-size: 0.9rem;">
-                              a.n Laela Muliana Masdjong
-                          </p>
-                          <button class="btn btn-light btn-sm rounded-4" data-nomer="0190002642"
-                              onclick="salin(this)">Salin No. Rekening</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- love gift end -->
-
-    <!-- salam start -->
-    <section class="bg-wakwak pt-5 vh-100" id="footer">
-      <div class="container pt-5">
-        <div class="row text-center justify-content-center text-white pt-2">
-          <div class="col-lg-9 col-md-11 col-12">
-            <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1000">
-              <p class="m-0 p-0 mb-3">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
-              <h5 class="mb-5">Wassalamualaikum Warahmatullahi Wabarakatuh</h5>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1500">
-              <p class="fs-4 m-0 p-0">Terima Kasih</p>
-              <p class="font-playball fs-45 m-0 p-0">Al bani & Salwa</p>
-              <p>Keluarga Besar</p>
-              <p class="m-0 p-0">Bapak Toto Widodo & Ibu Laela Mulian Masdjong</p>
-              <p class="m-0 p-0">Bapak Romli & Ibu Uniarsih</p>
-              <!-- <br />
-              <br />
-              <br />
-              <br />
-              <p>Create By <a href="https://wa.me/6287826753532" class="font-playball text-decoration-none text-white" target="_blank">Diui</a></p> -->
+              <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">
+                No. Rekening 0190002642
+              </p>
+              <p class="card-text" style="font-size: 0.9rem;">
+                a.n Laela Muliana Masdjong
+              </p>
+              <button class="btn btn-light btn-sm rounded-4" data-nomer="0190002642" onclick="salin(this)">Salin No.
+                Rekening</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- salam end -->
-    <!-- button audio -->
-    <div class="text-end fixed-bottom pe-3 pb-3">
-      <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-primary" onclick="stopAudio()">
-          <i class="fa-solid fa-stop"></i>
-        </button>
-        <button type="button" class="btn btn-sm btn-primary" onclick="playAudio()">
-          <i class="fa-solid fa-play"></i>
-        </button>
+    </div>
+  </div>
+  <!-- love gift end -->
+
+  <!-- salam start -->
+  <section class="bg-wakwak pt-5 vh-100" id="footer">
+    <div class="container pt-5">
+      <div class="row text-center justify-content-center text-white pt-2">
+        <div class="col-lg-9 col-md-11 col-12">
+          <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1000">
+            <p class="m-0 p-0 mb-3">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i
+              berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.
+            </p>
+            <h5 class="mb-5">Wassalamualaikum Warahmatullahi Wabarakatuh</h5>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1500">
+            <p class="fs-4 m-0 p-0">Terima Kasih</p>
+            <p class="font-playball fs-45 m-0 p-0">Al bani & Salwa</p>
+            <p>Keluarga Besar</p>
+            <p class="m-0 p-0">Bapak Toto Widodo & Ibu Laela Mulian Masdjong</p>
+            <p class="m-0 p-0">Bapak Romli & Ibu Uniarsih</p>
+            <!-- <br />
+              <br />
+              <br />
+              <br />
+              <p>Create By <a href="https://wa.me/6287826753532" class="font-playball text-decoration-none text-white" target="_blank">Diui</a></p> -->
+          </div>
+        </div>
       </div>
     </div>
-    <!-- button audio -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-  </body>
+  </section>
+  <!-- salam end -->
+  <!-- button audio -->
+  <div class="text-end fixed-bottom pe-3 pb-3">
+    <div class="btn-group">
+      <button type="button" class="btn btn-sm btn-primary" onclick="stopAudio()">
+        <i class="fa-solid fa-stop"></i>
+      </button>
+      <button type="button" class="btn btn-sm btn-primary" onclick="playAudio()">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </div>
+  <!-- button audio -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
 </html>
